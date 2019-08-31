@@ -8,4 +8,6 @@ Instructions for a computer to follow and solve a particular problem
 
 
  Constant time< Linear time< Quadratic
+ 
+ An example of quadratic growth rate is a nested loop
 
