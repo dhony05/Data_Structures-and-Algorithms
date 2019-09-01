@@ -9,7 +9,8 @@ public class App {
 		stack.push(13);
 		stack.push(24);
 		
-		stack
+		flexibleStack<String> hello = new flexibleStack<>();
+		
 	
 	
 		
@@ -20,12 +21,12 @@ public class App {
 			Thread.sleep(2000);
 			
 		}
-		while(!flexibleStack.isEmpty()) {
-			long value = stack.pop();
-			System.out.println(value);
-			Thread.sleep(2000);
-			
-		}
+//		while(!flexibleStack.isEmpty()) {
+//			String str = (String) flexibleStack.pop();
+//			System.out.println(str);
+//			Thread.sleep(2000);
+//			
+//		}
 		
 		
 	}
