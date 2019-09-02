@@ -4,7 +4,7 @@ public class Stack {
 	
 	private int maxSize;
 	
-	private long[] stackArray;
+	private char[] stackArray;
 	
 	private int top; // return the last value in the stack
 	
@@ -13,13 +13,13 @@ public class Stack {
 		// maxSize is going to be the size that will be pass to this
 	
 			this.maxSize = size;
-			this.stackArray = new long[maxSize];
+			this.stackArray = new char[maxSize];
 			this.top = -1;
 	
 		
 	}
 	
-	public void push(long value) {
+	public void push(char value) {
 		// this method takes a value which is going to be added to the stack
 		// and the top will be incremented
 		if(isFull())  {
@@ -31,12 +31,12 @@ public class Stack {
 		}	
 		
 	}
-	public long pop() {
+	public char pop() {
 		//This method will remove the element that is at the top of the array
 		//Then will set a new top value;
 		if(isEmpty())  {
 			System.out.println("This stack is full");
-			return -1;
+			return 'o';
 		}else {
 		int old_top = top;
 		top -- ;
@@ -44,9 +44,9 @@ public class Stack {
 		}
 	}
 	
-	public long peak() {
+	public char peak() {
 		//This method will return the value at the top in the array
-		return stackArray[top];
+		return stackArray[top	];
 	}
 	
 	public boolean isEmpty() {
