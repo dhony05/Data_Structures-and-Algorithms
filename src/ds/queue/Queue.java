@@ -37,12 +37,14 @@ public class Queue {
 	
 	public void view() 
 	{
+		//when this method is called it present a view of what is inside the queue
 		System.out.print("[");
 		for (int i = 0; i < queArray.length; i++) 
 		{
 			System.out.print(queArray[i] + "");
 		}
 		System.out.print( "]");
+		
 	}
 	
 	
