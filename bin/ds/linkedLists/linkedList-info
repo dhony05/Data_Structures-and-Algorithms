@@ -1,0 +1,10 @@
+
+Linked lists is a data structure to store a collection of items 
+
+in linked list , can insert data at the begining or somewhere in the middle or all at the end without
+worry about the fixed size
+
+linked list contains node that point to each others 
+ last node at the end of the linked list will always point to null
+ 
+ node is a instance of clase Node

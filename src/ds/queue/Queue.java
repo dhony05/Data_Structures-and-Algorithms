@@ -29,10 +29,41 @@ public class Queue {
 	 */
 	public void insert(long j) 
 	{
+		if(rear == maxSize -1) { // if rear is equal to the index position at the end of the array  bring it back to the begining
+			rear = -1;  // this will overwrite or replace if insert more than the maximum size (called Circular Quee)
+		}
 		rear ++; //  increment rear
 		queArray[rear] = j; // here we are going to put the data in rear position
 		nItems ++ ; // is the number of items and will be incremented.
 
+	}
+	public long remove() // this method will remove items from the front of queue
+	{ 	 
+		long temp = queArray[front]; // stractring any variable at the front " index" position"
+		front ++;  // increment front because it has to point tp next thing in line
+		if(front == maxSize) {
+			front = 0; // its set front back to the 0th index so that we can utilize the entire array again
+		}
+		nItems -- ;  // the number of items will decrese because we remove one
+		return temp;
+	}
+	
+	public long peekFront() // this method will peek in front of the line to see who is in the begining
+
+	{ 
+		return queArray[front]; // front is a pointer  , not changing 
+	}
+	
+	
+	public boolean isEmpty() // this method will return a boolean whether is empty or not 
+	{ 
+		return (nItems == 0);
+	}
+	
+	public boolean isFull() // this method will return a boolean whether is full or not 
+	{
+		return (nItems == maxSize);
+		
 	}
 	
 	public void view() 
@@ -41,7 +72,7 @@ public class Queue {
 		System.out.print("[");
 		for (int i = 0; i < queArray.length; i++) 
 		{
-			System.out.print(queArray[i] + "");
+			System.out.print(queArray[i] + " ");
 		}
 		System.out.print( "]");
 		
