@@ -43,10 +43,10 @@ public class DoublyLinkedList {
 		if(isEmpty()) {
 			first = newNode;
 		}else {
-			last.previous = newNode; //newNode will point to the old last
+			last.next = newNode; //newNode will point to the old last
 			newNode.previous = last; // old last will be newNode previous
 		}
-		last = newNode; //the last field should poing to the new node
+		last = newNode; //the last field should point to the new node
 		  
 	}
 	
@@ -78,7 +78,7 @@ public class DoublyLinkedList {
 			last.previous.next = null; // the last node previous node's fiel will point to null
 		}
 		
-		last = last.next;
+		last = last.previous;
 		return temp;
 		
 	}

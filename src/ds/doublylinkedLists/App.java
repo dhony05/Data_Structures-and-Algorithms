@@ -10,15 +10,15 @@ public class App {
 		myList.insertFirst(4556);
 		myList.insertFirst(23432);
 		myList.insertFirst(456);
-//		myList.insertLast(000);
-//		myList.insertLast(1340);
-//		myList.insertLast(1000);
+		myList.insertLast(000);
+		myList.insertLast(1340);
+		myList.insertLast(1000);
 		
 		myList.displayForward();
 		myList.displayBackward();
 		
 		myList.deleteFirst();
-		//myList.deleteLast();
+		myList.deleteLast();
 		myList.deleteKey(45);
 		myList.insertAfter(2324, 4839);
 		
