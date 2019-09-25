@@ -55,17 +55,18 @@ public class CircularLinkedList {
 		first = first.next; // first will point to old's next value
 		return temp; 
 	}
-	
-	public int deleteLast() {
-		int temp = last.data;
-		if(last.next == null ) {
-			first = null;
-		}
-		
-		last = last.next;
-		return temp;
-	}
-	
+	 // still need to fix it
+	// cannot do it because need to know previous for this 
+//	public int deleteLast() {
+//		int temp = last.data;
+//		if(last.next == null ) {
+//			first = null;
+//		}
+//		
+//		last = last.next;
+//		return temp;
+//	}
+//	
 	
 	public void displayList() {
 		System.out.println("List (first --> last) ");

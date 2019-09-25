@@ -4,6 +4,7 @@ public class Node {
 	
 	public int data; 
 	public Node next;
+	public Node previous;
 	
 	/*
 	 * This method will display what is inside the previous variables 
