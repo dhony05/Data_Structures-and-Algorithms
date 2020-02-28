@@ -11,7 +11,7 @@ public class Stack<T> {
 	
 	int size;
 	
-	StackElement<T> top;
+	Node<T> top;
 	
 	
 	public Stack() {
@@ -20,14 +20,14 @@ public class Stack<T> {
 	}
 	
 	public void push(T newValue) {
-		StackElement<T> newElement = new StackElement<T>(newValue, top);
+		Node<T> newElement = new Node<T>(newValue, top);
 		top = newElement;
 		size ++;
 	}
 	
 	public T pop() {
 		
-		StackElement<T> oldTop = top;
+		Node<T> oldTop = top;
 		if(oldTop == null || size == 0) {
 			return null;
 		}
@@ -45,9 +45,7 @@ public class Stack<T> {
 	}
 	
 	
-//	public void empty() {
-//		size = 0;
-//	}
+
 	public boolean isEmpty() {
 		return (top == null);
 	}

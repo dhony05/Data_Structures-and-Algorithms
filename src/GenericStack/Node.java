@@ -1,19 +1,19 @@
 package GenericStack;
 
-public class StackElement<T> {
+public class Node<T> {
 
 	
 	T value;
 	
-	StackElement<T> next;
+	Node<T> next;
 	
 	
-	public StackElement(T value, StackElement<T> next) {
+	public Node(T value, Node<T> next) {
 		this.value = value;
 		this.next = next;
 	}
 	
-	public StackElement<T> getNext(){
+	public Node<T> getNext(){
 		return next;
 	}
 	
