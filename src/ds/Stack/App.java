@@ -34,17 +34,20 @@ public class App {
 		Stack newStack = new Stack(str.length()); // create an stack set the reference to a new stack object with specific size
 		for (int i = 0; i < str.length(); i++) { // iterate through the input string
 			char inChar = str.charAt(i); // this will get the char from index
-			newStack.push(inChar); // pushing to the stack	 
+			newStack.push(inChar); // pushing to the stack	
+            
 
 		}
 		String reversedString = ""; // we create a empty string 
 		while(!newStack.isEmpty()) { // iterate if is not empty
 			char newChar = newStack.pop(); // create a char variable to hold the poping 
 			reversedString += newChar; // we are concatenating the char to create the return string
+		
 			//Thread.sleep(2000);
 
 		}
 		return reversedString;// return the string
+		
 	}
 
 
