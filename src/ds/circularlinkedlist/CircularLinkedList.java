@@ -55,7 +55,7 @@ public class CircularLinkedList {
 		first = first.next; // first will point to old's next value
 		return temp; 
 	}
-	 // still need to fix it
+	 // need to be fixed
 	// cannot do it because need to know previous for this 
 //	public int deleteLast() {
 //		int temp = last.data;
@@ -72,6 +72,7 @@ public class CircularLinkedList {
 		System.out.println("List (first --> last) ");
 		Node current = first;
 		while(current != null) { // remember the last node point to null 
+			//snapshot basically
 			current.displayNode();
 			current = current.next;
 			
