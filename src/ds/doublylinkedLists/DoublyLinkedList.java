@@ -6,14 +6,10 @@ public class DoublyLinkedList {
 
 	private Node first;
 	private Node last;
-	private Node previous;
-	
-	
 	
 	public DoublyLinkedList() {
 		this.first = null;
 		this.last = null;
-		this.previous = null;
 	}
 	
 	public boolean isEmpty() {

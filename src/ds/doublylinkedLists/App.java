@@ -13,6 +13,7 @@ public class App {
 		myList.insertLast(000);
 		myList.insertLast(1340);
 		myList.insertLast(1000);
+		myList.insertLast(1040);
 		
 		myList.displayForward();
 		myList.displayBackward();
