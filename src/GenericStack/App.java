@@ -15,5 +15,10 @@ public class App {
 		System.out.println(myStr.isEmpty());
 		
 		
+		Stack<Integer> myInt = new Stack<Integer>();
+		
+		myInt.push(2);
+		myInt.push(4);
+		System.out.println(myInt.isEmpty());
 	}
 }
