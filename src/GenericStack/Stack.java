@@ -19,6 +19,11 @@ public class Stack<T> {
 		top = null;
 	}
 	
+	/***
+	 * This method will a new generic element, will add it to the top of the stack and increases 
+	 * stack's sizes by 1.
+	 * @param newValue
+	 */
 	public void push(T newValue) {
 		Node<T> newElement = new Node<T>(newValue, top);
 		top = newElement;
